@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crisis Compass - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Crisis Compass</div>
+    <ul>
+      <li>
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>&nbsp;Home
+        </a>
+      </li>
+      <li>
+        <a href="emergency.html">
+          <i class="fa-solid fa-address-book"></i>&nbsp;Contacts</a>
+      </li>
+      <li>
+        <a href="report.html">
+          <i class="fa-solid fa-pen"></i>&nbsp;Report
+        </a>
+      </li>
+      <li>
+        <a href="donate.html">
+          <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;Donate</a></li>
+      <li>
+        <a href="volunteer.html">
+          <i class="fa-solid fa-hand-holding-hand"></i>&nbsp;Volunteer
+        </a>
+      </li>
+      <li><a href="login.html">
+        <i class="fa-solid fa-circle-user"></i>&nbsp;Login</a></li>
+        <li>
+          <a href="logout.php">
+            <i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout
+          </a>
+        </li>
+        
+    </ul>
+  </nav>
+
+  <section class="home">
+    <h1>Welcome to Crisis Compass</h1>
+    <p>Your trusted guide during emergencies. Stay informed. Stay safe.</p>
+  </section>
+
+  <div class="slider-wrapper">
+    <button class="prev">&#10094;</button>
+  <div class="card-container">
+  
+    <div class="card" onclick="showGuidelines('earthquake')">
+      <img src="earthquake.avif" alt="Earthquake">
+      <div class="card-title">Earthquake</div>
+      <div class="card-hover">
+        <h3>Earthquake Safety</h3>
+        <p>Drop, Cover, and Hold On. Stay indoors until the shaking stops.</p>
+      </div>
+    </div>
+  
+    <div class="card" onclick="showGuidelines('flood')">
+      <img src="flood.jpg" alt="Flood">
+      <div class="card-title">Flood</div>
+      <div class="card-hover">
+        <h3>Flood Safety</h3>
+        <p>Move to higher ground. Avoid walking or driving through floodwaters.</p>
+      </div>
+    </div>
+  
+    <div class="card" onclick="showGuidelines('wildfire')">
+      <img src="wildfire1.webp" alt="Wildfire">
+      <div class="card-title">Wildfire</div>
+      <div class="card-hover">
+        <h3>Wildfire Safety</h3>
+        <p>Evacuate if advised. Keep emergency supplies and protect breathing.</p>
+      </div>
+    </div>
+  
+    <div class="card" onclick="showGuidelines('cyclone')">
+      <img src="cyclone1.webp" alt="Cyclone">
+      <div class="card-title">Cyclone</div>
+      <div class="card-hover">
+        <h3>Cyclone Safety</h3>
+        <p>Secure property. Move to a safe shelter and stay updated on alerts.</p>
+      </div>
+    </div>
+  
+    <div class="card" onclick="showGuidelines('tsunami')">
+      <img src="tsunami.jpg" alt="Tsunami">
+      <div class="card-title">Tsunami</div>
+      <div class="card-hover">
+        <h3>Tsunami Safety</h3>
+        <p>Move to higher ground immediately after strong earthquakes near the coast.</p>
+      </div>
+    </div>
+    <div class="card" onclick="showGuidelines('drought')">
+      <img src="drought1.jpg" alt="Drought">
+      <div class="card-title">Drought</div>
+      <div class="card-hover">
+        <h3>Drought Safety</h3>
+        <p> Conserve water. Stay informed about local water restrictions and adopt sustainable practices.</p>
+      </div>
+    </div>
+    <div class="card" onclick="showGuidelines('pandemic')">
+      <img src="pandemic.avif" alt="Pandemic">
+      <div class="card-title">Pandemic</div>
+      <div class="card-hover">
+        <h3>Pandemic Safety</h3>
+        <p>Practice social distancing, wear a mask, and follow local health guidelines.</p>
+      </div>
+    </div>
+    <div class="card" onclick="showGuidelines('landslide')">
+      <img src="landslide.jpg" alt="Landslide">
+      <div class="card-title">Landslide</div>
+      <div class="card-hover">
+        <h3>Landslide Safety</h3>
+        <p>Move away from the path of a landslide quickly. Stay alert after heavy rains.</p>
+      </div>
+    </div>
+    
+    <div class="card" onclick="showGuidelines('famine')">
+      <img src="famine.jpg" alt="Famine">
+      <div class="card-title">Famine</div>
+      <div class="card-hover">
+        <h3>Famine Safety</h3>
+        <p>Learn how to survive and respond during food shortages.</p>
+      </div>
+    </div>
+    
+    <div class="card" onclick="showGuidelines('tornado')">
+      <img src="tornado1.jpg" alt="Tornado">
+      <div class="card-title">Tornado</div>
+      <div class="card-hover">
+        <h3>Tornado Safety</h3>
+        <p>Seek shelter in a basement or interior room. Avoid windows and stay low.</p>
+      </div>
+    </div>
+    
+
+  </div>
+  <button class="next">&#10095;</button>
+  </div>
+  
+  <!-- Popup -->
+  <div id="guideline-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <h4 style="font-size: 30px; margin:10px">Stay safe from HEATWAVE</h4>
+  <br>
+  <div class="heat">
+    
+    <img src="heatwave1.jpg" alt="heatwave">
+    <p>
+      - Stay indoors during peak heat hours, usually between 10 a.m. and 4 p.m.<br>
+      - Drink plenty of water to stay hydrated.<br>
+      - Wear lightweight, light-colored clothing and a wide-brimmed hat.<br>
+      - Avoid strenuous outdoor activities, especially during the hottest part of the day.<br>
+      - Use fans or air conditioning to cool down indoor spaces.<br>
+      - Check on vulnerable individuals, such as the elderly or those with health conditions.<br>
+      - Never leave children or pets in hot cars.
+    </p>
+  </div>
+  
+  <footer>
+    © 2025 Crisis Compass
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

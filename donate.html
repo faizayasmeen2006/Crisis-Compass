@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Crisis Compass</div>
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+      <li><a href="emergency.html"><i class="fa-solid fa-address-book"></i>&nbsp;Contacts</a></li>
+      <li><a href="report.html"><i class="fa-solid fa-pen"></i>&nbsp;Report</a></li>
+      <li><a href="donate.html"><i class="fa-solid fa-hand-holding-heart"></i>&nbsp;Donate</a></li>
+      <li><a href="volunteer.html"><i class="fa-solid fa-hand-holding-hand"></i>&nbsp;Volunteer</a></li>
+      <li><a href="login.html"><i class="fa-solid fa-circle-user"></i>&nbsp;Login</a></li>
+      <li>
+        <a href="logout.php">
+          <i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h1>Make a Donation</h1>
+    <!-- Form starts here -->
+    <form class="form" action="donate.php" method="POST">
+
+      <label for="donor_name">Your Name</label>
+      <input type="text" id="donor_name" name="donor_name" placeholder="Your Name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      
+      <label for="amount">Donation Amount (₹)</label>
+      <input type="number" id="amount" name="amount" placeholder="Donation Amount (₹)" required>
+      
+      <label for="payment_method">Payment Method</label>
+      <select name="payment_method" id="payment_method" required>
+        <option value="">Select Payment Method</option>
+        <option value="UPI">UPI</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Net Banking">Net Banking</option>
+      </select>
+      
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" placeholder="Message (optional)" rows="4"></textarea>
+      
+      <button type="submit">Donate Now</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Crisis Compass
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

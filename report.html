@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report a Disaster</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Crisis Compass</div>
+    <ul>
+      <li>
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>&nbsp;Home
+        </a>
+      </li>
+      <li>
+        <a href="emergency.html">
+          <i class="fa-solid fa-address-book"></i>&nbsp;Contacts</a>
+      </li>
+      <li>
+        <a href="report.html">
+          <i class="fa-solid fa-pen"></i>&nbsp;Report
+        </a>
+      </li>
+      <li>
+        <a href="donate.html">
+          <i class="fa-solid fa-hand-holding-heart"></i>&nbsp;Donate</a></li>
+      <li>
+        <a href="volunteer.html">
+          <i class="fa-solid fa-hand-holding-hand"></i>&nbsp;Volunteer
+        </a>
+      </li>
+      <li><a href="login.html">
+        <i class="fa-solid fa-circle-user"></i>&nbsp;Login</a></li>
+        <li>
+          <a href="logout.php">
+            <i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logout
+          </a>
+        </li>
+        
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h1>Report a Disaster</h1>
+    <form class="form" action="submit_report.php" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="location" placeholder="Location of Disaster" required>
+      <select name="disaster_type" required>
+        <option value="">Select Disaster Type</option>
+        <option value="Flood">Flood</option>
+        <option value="Earthquake">Earthquake</option>
+        <option value="Fire">Fire</option>
+        <option value="Cyclone">Cyclone</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="description" placeholder="Brief Description" rows="5" required></textarea>
+      <button type="submit">Submit Report</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+
+  <footer>
+    © 2025 Crisis Compass
+  </footer>
+
+</body>
+</html>
